@@ -299,4 +299,65 @@ materialize 成 Blob URL，所以双击启动不会卡。
 
 ## 📄 许可
 
-[MIT](LICENSE) © VR-Jobs
+本仓库的 LICENSE 为 [MIT](LICENSE) © VR-Jobs，涵盖此处新写的文档与 Skill 内容。
+关于所描述引擎的来源与上游授权状态，请务必阅读下一节。
+
+---
+
+## 🌱 源起与致谢 · Origin & Credits
+
+**本 Skill 及其描述的花朵引擎，源自 [whitecat-captain/bloom-animation](https://github.com/whitecat-captain/bloom-animation)。**
+
+> Upstream: **[whitecat-captain/bloom-animation](https://github.com/whitecat-captain/bloom-animation)**
+> · 在线演示 <https://bloom-animation-mu.vercel.app>
+> · 作者 [@whitecat-captain](https://github.com/whitecat-captain)
+
+那个项目做出了这里的一切根基：叶序花瓣布局、把花瓣宽度与卷曲密度烤进 ramp 贴图
+再在顶点着色器里变形的整套办法、绽放波前、五段调色板、Next.js 工作室与它的
+Quick / Advanced / Export 三个面板、导出管线，以及**「把一张参考图翻译成一份
+可编辑花朵配置」这个 Skill 的构想本身**（上游的 Skill 名为
+`bloom-animation-generator`）。没有它，这个仓库不存在。
+
+### 上游给了什么，下游加了什么
+
+Flower-HUA 是 bloom-animation 的下游衍生项目（改名、独立数据目录 `~/.codex/flower-hua/`，
+避免与原版运行记录混淆）。两边 `components/flower/` 的实测差异：
+
+| | 上游 bloom-animation | Flower-HUA | 说明 |
+|---|---:|---:|---|
+| `flowerScene.ts` | 54 KB | **179 KB** | +124 KB，约 3.3 倍——新增的是各科属的结构布局器与花心器官生成器 |
+| `flowerAnatomy.ts` | — | 16 KB | **Anatomy V2 全部为下游新增**：26 个结构科属 × 25 种花心 |
+| `StudioArHandControl.tsx` + `handGesture.ts` | — | 20 KB | MediaPipe 手势 AR 控制 |
+| `StudioFlowerBrowser.tsx` | — | 9 KB | 花朵库浏览面板 |
+| `petalProfile.ts` / `petalMesh.ts` / `flowerExport.ts` / 各 Studio 面板 | ✅ | 基本沿用 | 核心几何与导出逻辑来自上游 |
+
+换句话说：**顶点着色器里那朵花是上游的；26 个科属和 25 种花心器官是这边加的。**
+本仓库的 Skill 文档则是第三层——把两者合起来的成品读成表格，全部为新写内容。
+
+### 关于授权，需要你知道的
+
+截至 2026-08-04，上游仓库**没有声明任何 LICENSE**。在著作权默认规则下，
+这意味着保留所有权利，未显式授予再分发或衍生的许可。
+
+这件事影响的是本仓库 `docs/` 下的两个 demo——它们内联了衍生自上游的引擎代码；
+`SKILL.md` 与 `references/` 是独立撰写的文档，不含上游源码。
+本仓库的 MIT 声明覆盖的是后者。
+
+**建议**：联系 [@whitecat-captain](https://github.com/whitecat-captain) 确认授权意向
+（一个 MIT/Apache-2.0 声明即可解决），在此之前把上面两个 demo 理解为经作者许可的
+展示，而非可自由再分发的物料。
+
+### 其它依赖
+
+许可为逐个读 `node_modules/*/package.json` 核对，非凭印象：
+
+[three.js](https://github.com/mrdoob/three.js)（MIT）·
+[React](https://github.com/facebook/react)（MIT）·
+[Next.js](https://github.com/vercel/next.js)（MIT）·
+[MediaPipe Tasks Vision](https://github.com/google-ai-edge/mediapipe)（Apache-2.0）·
+[lil-gui](https://github.com/georgealways/lil-gui)（MIT）·
+[Tweakpane](https://github.com/cocopon/tweakpane)（MIT）
+
+两个 demo 都**没有**打进 GSAP（它用的是自定义的 "standard no-charge" 许可，不是 MIT）：
+画廊页的入口是纯 TypeScript，只引 `flowerScene`；Studio 页虽然用 React，但没有引到
+GSAP 驱动的滚动叙事组件。以上为对两个产物 grep 后确认，非推断。
