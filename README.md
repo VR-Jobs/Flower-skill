@@ -1,11 +1,13 @@
+<p align="center">
+  <a href="README.md"><img src="docs/images/_btn-zh-on.png" height="30" alt="中文"></a>
+  &nbsp;
+  <a href="README.en.md"><img src="docs/images/_btn-en-off.png" height="30" alt="English"></a>
+</p>
+
 # Flower-HUA · flower-engine
 
 > 一个把参考图翻译成**可编辑、可绽放、可导出**的程序化 3D 花朵的引擎，
 > 以及把它的全部知识蒸馏成表格的 Agent Skill。
->
-> A procedural bloom engine that turns a reference image into an editable,
-> animatable, exportable 3D flower — plus the Agent Skill that distils its
-> parameter surface into tables.
 
 ## 🌸 在线 Demo（直接点开，无需安装）
 
@@ -149,6 +151,7 @@
 <td align="center"><b>紫藤瀑布</b><br><sub>Violet Wisteria</sub><br><sub>垂挂总状花序</sub></td>
 </tr>
 </table>
+
 ### 按结构分组
 
 引擎不按植物学名字分类，而按**看得见的结构**。26 个结构科属被这 36 朵**全部覆盖**，一个不落。
