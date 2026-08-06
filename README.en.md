@@ -64,15 +64,15 @@ read these files on their own as a design record of how the engine works.
 
 ## 🌸 Live demos (click and go, nothing to install)
 
-| | What it is | Size |
-|---|---|---|
-| **[▶ Flower Gallery](https://vr-jobs.github.io/Flower-skill/)** | All 36 flowers, switchable. Drag to orbit, scroll to zoom, click to replay the bloom. **Start here** | 2.3 MB |
-| **[▶ Full Studio](https://vr-jobs.github.io/Flower-skill/studio.html)** | 39 flowers plus the Quick / Advanced / Export / AR panes, all 43 parameters live, MP4 and PNG-sequence export | ⚠️ 43 MB, first load takes a while |
-| **[▶ Display Case](https://vr-jobs.github.io/Flower-skill/demos/display-case.html)** | 40 flowers, one per cell. Drag to rotate every flower to any angle, arrow keys snap 90° between front / side / top, Space blooms or closes them all, `Esc` fills the screen | 2.4 MB |
-| **[▶ Flower Editor](https://vr-jobs.github.io/Flower-skill/demos/flower-editor-lite.html)** | Map-editor-style planting: 3 terrains · 39 flowers · batch planting · brush strokes · 14 art styles · undo/redo · save & share · walk mode | 2.8 MB |
-| **[▶ Flower Editor, full](https://vr-jobs.github.io/Flower-skill/demos/flower-editor.html)** | The same editor plus **AR gesture planting** — the camera tracks your hand, point with your index finger and pinch to plant. Chrome only | ⚠️ 29 MB |
-| **[▶ Flower World](https://vr-jobs.github.io/Flower-skill/demos/flower-world.html)** | A thousand-flower sea: mandala beds, flower arches, mixed borders, giant bouquet mounds — walk in under the blooms | 2.5 MB |
-| **[▶ Garden Walk](https://vr-jobs.github.io/Flower-skill/demos/garden-walk.html)** | A low-poly character strolling a garden; walk up to a bed to read the flower's name. `WASD` to walk, `Shift` to run | 2.4 MB |
+| | Screenshot | What it is | Size |
+|---|---|---|---|
+| **[▶ Flower Gallery](https://vr-jobs.github.io/Flower-skill/)** | <img src="docs/images/demo-gallery.png" width="240" alt=""> | All 36 flowers, switchable. Drag to orbit, scroll to zoom, click to replay the bloom. **Start here** | 2.3 MB |
+| **[▶ Full Studio](https://vr-jobs.github.io/Flower-skill/studio.html)** | <img src="docs/images/demo-flower-studio.png" width="240" alt=""> | 39 flowers plus the Quick / Advanced / Export / AR panes, all 43 parameters live, MP4 and PNG-sequence export | ⚠️ 43 MB, first load takes a while |
+| **[▶ Display Case](https://vr-jobs.github.io/Flower-skill/demos/display-case.html)** | <img src="docs/images/demo-display-case.png" width="240" alt=""> | 40 flowers, one per cell. Drag to rotate every flower to any angle, arrow keys snap 90° between front / side / top, Space blooms or closes them all, `Esc` fills the screen | 2.4 MB |
+| **[▶ Flower Editor](https://vr-jobs.github.io/Flower-skill/demos/flower-editor-lite.html)** | <img src="docs/images/demo-flower-editor.png" width="240" alt=""> | Map-editor-style planting: 3 terrains · 39 flowers · batch planting · brush strokes · 14 art styles · undo/redo · save & share · walk mode | 2.8 MB |
+| **[▶ Flower Editor, full](https://vr-jobs.github.io/Flower-skill/demos/flower-editor.html)** | <img src="docs/images/demo-flower-editor-ar.png" width="240" alt=""> | The same editor plus **AR gesture planting** — the camera tracks your hand, point with your index finger and pinch to plant. Chrome only | ⚠️ 29 MB |
+| **[▶ Flower World](https://vr-jobs.github.io/Flower-skill/demos/flower-world.html)** | <img src="docs/images/demo-flower-world.png" width="240" alt=""> | A thousand-flower sea: mandala beds, flower arches, mixed borders, giant bouquet mounds — walk in under the blooms | 2.5 MB |
+| **[▶ Garden Walk](https://vr-jobs.github.io/Flower-skill/demos/garden-walk.html)** | <img src="docs/images/demo-garden-walk.png" width="240" alt=""> | A low-poly character strolling a garden; walk up to a bed to read the flower's name. `WASD` to walk, `Shift` to run | 2.4 MB |
 
 > 🗂 **[Landing page for all of them →](https://vr-jobs.github.io/Flower-skill/demos/)**
 

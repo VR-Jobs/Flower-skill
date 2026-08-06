@@ -60,15 +60,15 @@ Codex 等其它 Agent Skills 宿主读的是 `~/.agents/skills`，链到那里�
 
 ## 🌸 在线 Demo（直接点开，无需安装）
 
-| | 说明 | 体积 |
-|---|---|---|
-| **[▶ 花朵画廊 Gallery](https://vr-jobs.github.io/Flower-skill/)** | 36 朵花任意切换，拖动旋转、滚轮缩放、点击重新绽放。**推荐从这里开始** | 2.3 MB |
-| **[▶ 完整工作室 Studio](https://vr-jobs.github.io/Flower-skill/studio.html)** | 39 朵花 + Quick/Advanced/Export/AR 四个面板，43 个参数全可调，可导出 MP4 / PNG 序列 | ⚠️ 43 MB，首次加载需要等 |
-| **[▶ 花朵陈列柜 Display Case](https://vr-jobs.github.io/Flower-skill/demos/display-case.html)** | 40 种花各占一格。拖动鼠标任意角度旋转全部花朵，方向键 90° 切正／侧／俯视，空格全体绽放或合拢，`Esc` 铺满全屏 | 2.4 MB |
-| **[▶ 鲜花编辑器 Editor](https://vr-jobs.github.io/Flower-skill/demos/flower-editor-lite.html)** | 魔兽地图编辑器式种花：三地形 · 39 花 · 批量种植 · 画笔连种 · 14 种画风 · 撤销重做 · 存档分享 · 漫游 | 2.8 MB |
-| **[▶ 鲜花编辑器 完整版](https://vr-jobs.github.io/Flower-skill/demos/flower-editor.html)** | 同上，多一项 **AR 手势种花**（摄像头识别，食指瞄准、捏合种花）。需用 Chrome 打开 | ⚠️ 29 MB |
-| **[▶ 鲜花世界 Flower World](https://vr-jobs.github.io/Flower-skill/demos/flower-world.html)** | 上千朵花铺满的花海：百花曼陀罗 · 花拱门 · 混植花境 · 巨型花束丘，可走进花下 | 2.5 MB |
-| **[▶ 花园漫游 Garden Walk](https://vr-jobs.github.io/Flower-skill/demos/garden-walk.html)** | 低多边形小人在花园散步，走近花坛显示花名。`WASD` 行走，`Shift` 奔跑 | 2.4 MB |
+| | 截图 | 说明 | 体积 |
+|---|---|---|---|
+| **[▶ 花朵画廊 Gallery](https://vr-jobs.github.io/Flower-skill/)** | <img src="docs/images/demo-gallery.png" width="240" alt=""> | 36 朵花任意切换，拖动旋转、滚轮缩放、点击重新绽放。**推荐从这里开始** | 2.3 MB |
+| **[▶ 完整工作室 Studio](https://vr-jobs.github.io/Flower-skill/studio.html)** | <img src="docs/images/demo-flower-studio.png" width="240" alt=""> | 39 朵花 + Quick/Advanced/Export/AR 四个面板，43 个参数全可调，可导出 MP4 / PNG 序列 | ⚠️ 43 MB，首次加载需要等 |
+| **[▶ 花朵陈列柜 Display Case](https://vr-jobs.github.io/Flower-skill/demos/display-case.html)** | <img src="docs/images/demo-display-case.png" width="240" alt=""> | 40 种花各占一格。拖动鼠标任意角度旋转全部花朵，方向键 90° 切正／侧／俯视，空格全体绽放或合拢，`Esc` 铺满全屏 | 2.4 MB |
+| **[▶ 鲜花编辑器 Editor](https://vr-jobs.github.io/Flower-skill/demos/flower-editor-lite.html)** | <img src="docs/images/demo-flower-editor.png" width="240" alt=""> | 魔兽地图编辑器式种花：三地形 · 39 花 · 批量种植 · 画笔连种 · 14 种画风 · 撤销重做 · 存档分享 · 漫游 | 2.8 MB |
+| **[▶ 鲜花编辑器 完整版](https://vr-jobs.github.io/Flower-skill/demos/flower-editor.html)** | <img src="docs/images/demo-flower-editor-ar.png" width="240" alt=""> | 同上，多一项 **AR 手势种花**（摄像头识别，食指瞄准、捏合种花）。需用 Chrome 打开 | ⚠️ 29 MB |
+| **[▶ 鲜花世界 Flower World](https://vr-jobs.github.io/Flower-skill/demos/flower-world.html)** | <img src="docs/images/demo-flower-world.png" width="240" alt=""> | 上千朵花铺满的花海：百花曼陀罗 · 花拱门 · 混植花境 · 巨型花束丘，可走进花下 | 2.5 MB |
+| **[▶ 花园漫游 Garden Walk](https://vr-jobs.github.io/Flower-skill/demos/garden-walk.html)** | <img src="docs/images/demo-garden-walk.png" width="240" alt=""> | 低多边形小人在花园散步，走近花坛显示花名。`WASD` 行走，`Shift` 奔跑 | 2.4 MB |
 
 > 🗂 **[全部六件套的落地页 →](https://vr-jobs.github.io/Flower-skill/demos/)**
 
