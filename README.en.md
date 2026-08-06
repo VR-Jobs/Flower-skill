@@ -10,12 +10,71 @@
 > animatable, exportable 3D flower — plus the Agent Skill that distils its
 > parameter surface into tables.
 
+## 📦 What's in here
+
+An **Agent Skill** repository, shipped with a set of click-to-open demos:
+
+| | |
+|---|---|
+| 🧠 **The skill itself** | [`SKILL.md`](SKILL.md) + [`references/`](references/) — five reference documents, ~2000 lines. **This is the point of the repo.** |
+| 🌸 **Live demos** | [`docs/`](docs/) — seven single-file HTML pages showing what the engine can build |
+
+---
+
+## 🧠 The flower-engine Skill
+
+The substance of this repository is an **Agent Skill** — the engine's knowledge
+lifted out of 4887 lines of `flowerScene.ts` plus 761 lines of
+`flowerAnatomy.ts` and written down as tables you can look things up in.
+
+| File | Contents |
+|---|---|
+| [`SKILL.md`](SKILL.md) | Trigger description, code map, the six-step authoring loop, hard limits |
+| [`references/params.md`](references/params.md) | **All 43 engine parameters** — default, range, visual effect, and the rebuild / bake / uniform **cost class** that decides which are safe to drag live and which rebuild the whole mesh |
+| [`references/anatomy.md`](references/anatomy.md) | **26 structure families × 25 core organ kinds** — whorl counts, variation curves, core defaults, and the double clamp on `core.count` |
+| [`references/translate.md`](references/translate.md) | Reference image → `FlowerConfig`, step by step, with the authoring conventions **measured** across the 36 shipped flowers and one worked example |
+| [`references/build.md`](references/build.md) | The three data stores, Studio lifecycle, export pipeline, single-HTML bundler, three Playwright verifiers |
+| [`references/pitfalls.md`](references/pitfalls.md) | ~20 failure modes already encoded as constraints in the engine source |
+
+**Every figure was verified against the source rather than recalled**: all 43
+parameter defaults, all 26 family rows (whorls, core kind, core size / height /
+count, the seven variation values each), and every `count` ceiling — each one
+checked by script against `flowerScene.ts` and `flowerAnatomy.ts`.
+
+### Install
+
+Claude Code:
+
+```bash
+git clone https://github.com/VR-Jobs/Flower-skill.git
+ln -s "$(pwd)/Flower-skill" ~/.claude/skills/flower-engine
+```
+
+Codex and other Agent Skills hosts read `~/.agents/skills` instead — link it there.
+
+### It documents a codebase it does not contain
+
+Paths in these files (`Studio/components/flower/flowerScene.ts`,
+`data/flowers.json`, `scripts/upsert_flower.py`, `tools/single-html/`) are
+relative to the **Flower-HUA project root**, not to this repository. The Skill
+is a reading and authoring guide for that codebase — check it out alongside, or
+read these files on their own as a design record of how the engine works.
+
+---
+
 ## 🌸 Live demos (click and go, nothing to install)
 
 | | What it is | Size |
 |---|---|---|
 | **[▶ Flower Gallery](https://vr-jobs.github.io/Flower-skill/)** | All 36 flowers, switchable. Drag to orbit, scroll to zoom, click to replay the bloom. **Start here** | 2.3 MB |
 | **[▶ Full Studio](https://vr-jobs.github.io/Flower-skill/studio.html)** | 39 flowers plus the Quick / Advanced / Export / AR panes, all 43 parameters live, MP4 and PNG-sequence export | ⚠️ 43 MB, first load takes a while |
+| **[▶ Display Case](https://vr-jobs.github.io/Flower-skill/demos/display-case.html)** | 40 flowers, one per cell. Drag to rotate every flower to any angle, arrow keys snap 90° between front / side / top, Space blooms or closes them all, `Esc` fills the screen | 2.4 MB |
+| **[▶ Flower Editor](https://vr-jobs.github.io/Flower-skill/demos/flower-editor-lite.html)** | Map-editor-style planting: 3 terrains · 39 flowers · batch planting · brush strokes · 14 art styles · undo/redo · save & share · walk mode | 2.8 MB |
+| **[▶ Flower Editor, full](https://vr-jobs.github.io/Flower-skill/demos/flower-editor.html)** | The same editor plus **AR gesture planting** — the camera tracks your hand, point with your index finger and pinch to plant. Chrome only | ⚠️ 29 MB |
+| **[▶ Flower World](https://vr-jobs.github.io/Flower-skill/demos/flower-world.html)** | A thousand-flower sea: mandala beds, flower arches, mixed borders, giant bouquet mounds — walk in under the blooms | 2.5 MB |
+| **[▶ Garden Walk](https://vr-jobs.github.io/Flower-skill/demos/garden-walk.html)** | A low-poly character strolling a garden; walk up to a bed to read the flower's name. `WASD` to walk, `Shift` to run | 2.4 MB |
+
+> 🗂 **[Landing page for all of them →](https://vr-jobs.github.io/Flower-skill/demos/)**
 
 The gallery honours deep links, so you can point straight at one flower:
 [`#velvet-dahlia`](https://vr-jobs.github.io/Flower-skill/#velvet-dahlia) ·
@@ -199,47 +258,6 @@ spadices, seed globes, whiskers and 19 more — not petals pretending to be one.
 | `spiral-rosette` | Scarlet Rose | 48 | `none` |
 | `torch-ginger` | Crimson Torch Ginger | 32 | `torch-cone` |
 | `wisteria-raceme` | Violet Wisteria | 24 | `wisteria-rachis` |
----
-
-## 🧠 The flower-engine Skill
-
-The substance of this repository is an **Agent Skill** — the engine's knowledge
-lifted out of 4887 lines of `flowerScene.ts` plus 761 lines of
-`flowerAnatomy.ts` and written down as tables you can look things up in.
-
-| File | Contents |
-|---|---|
-| [`SKILL.md`](SKILL.md) | Trigger description, code map, the six-step authoring loop, hard limits |
-| [`references/params.md`](references/params.md) | **All 43 engine parameters** — default, range, visual effect, and the rebuild / bake / uniform **cost class** that decides which are safe to drag live and which rebuild the whole mesh |
-| [`references/anatomy.md`](references/anatomy.md) | **26 structure families × 25 core organ kinds** — whorl counts, variation curves, core defaults, and the double clamp on `core.count` |
-| [`references/translate.md`](references/translate.md) | Reference image → `FlowerConfig`, step by step, with the authoring conventions **measured** across the 36 shipped flowers and one worked example |
-| [`references/build.md`](references/build.md) | The three data stores, Studio lifecycle, export pipeline, single-HTML bundler, three Playwright verifiers |
-| [`references/pitfalls.md`](references/pitfalls.md) | ~20 failure modes already encoded as constraints in the engine source |
-
-**Every figure was verified against the source rather than recalled**: all 43
-parameter defaults, all 26 family rows (whorls, core kind, core size / height /
-count, the seven variation values each), and every `count` ceiling — each one
-checked by script against `flowerScene.ts` and `flowerAnatomy.ts`.
-
-### Install
-
-Claude Code:
-
-```bash
-git clone https://github.com/VR-Jobs/Flower-skill.git
-ln -s "$(pwd)/Flower-skill" ~/.claude/skills/flower-engine
-```
-
-Codex and other Agent Skills hosts read `~/.agents/skills` instead — link it there.
-
-### It documents a codebase it does not contain
-
-Paths in these files (`Studio/components/flower/flowerScene.ts`,
-`data/flowers.json`, `scripts/upsert_flower.py`, `tools/single-html/`) are
-relative to the **Flower-HUA project root**, not to this repository. The Skill
-is a reading and authoring guide for that codebase — check it out alongside, or
-read these files on their own as a design record of how the engine works.
-
 ---
 
 ## 🔧 How the engine works

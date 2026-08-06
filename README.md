@@ -9,6 +9,55 @@
 > 一个把参考图翻译成**可编辑、可绽放、可导出**的程序化 3D 花朵的引擎，
 > 以及把它的全部知识蒸馏成表格的 Agent Skill。
 
+## 📦 这个仓库有什么
+
+这是一个 **Agent Skill 仓库**，附带一整套可点开的在线 Demo：
+
+| | 内容 |
+|---|---|
+| 🧠 **Skill 本体** | [`SKILL.md`](SKILL.md) + [`references/`](references/)（5 份参考文档，约 2000 行）——**这是仓库的主体** |
+| 🌸 **在线 Demo** | [`docs/`](docs/)——7 个单文件 HTML，点开即用，用来演示这套引擎能做出什么 |
+
+---
+
+## 🧠 flower-engine Skill
+
+这个仓库的主体是一个 **Agent Skill**——把引擎的知识从 4887 行 `flowerScene.ts`
+加 761 行 `flowerAnatomy.ts` 里提出来，写成可查的表。
+
+| 文件 | 内容 |
+|---|---|
+| [`SKILL.md`](SKILL.md) | 触发描述、代码地图、6 步创作循环、硬性上限 |
+| [`references/params.md`](references/params.md) | **全部 43 个引擎参数**——默认值、区间、视觉效果，以及 rebuild / bake / uniform 三级**代价分类**（决定哪些能实时拖动，哪些会重建整个网格） |
+| [`references/anatomy.md`](references/anatomy.md) | **26 个结构科属 × 25 种花心**——轮瓣数、variation 曲线、花心默认值、`core.count` 的双重钳位表 |
+| [`references/translate.md`](references/translate.md) | 参考图 → `FlowerConfig` 的完整流程，含从 36 朵成品**实测**出的创作约定，以及一个逐项拆解的范例 |
+| [`references/build.md`](references/build.md) | 三个数据存储、Studio 生命周期、导出管线、单文件打包器、三个 Playwright 验证器 |
+| [`references/pitfalls.md`](references/pitfalls.md) | 约 20 个已经以约束形式写死在引擎源码里的失败模式 |
+
+**每个数字都对着源码核验过，不是凭记忆写的**：43 个参数默认值、26 行科属表
+（轮瓣数 / 花心种类 / 花心尺寸高度数量 / 每行 7 个 variation 值）、以及每一个
+`count` 上限——全部由脚本逐项比对 `flowerScene.ts` 与 `flowerAnatomy.ts`。
+
+### 安装
+
+Claude Code：
+
+```bash
+git clone https://github.com/VR-Jobs/Flower-skill.git
+ln -s "$(pwd)/Flower-skill" ~/.claude/skills/flower-engine
+```
+
+Codex 等其它 Agent Skills 宿主读的是 `~/.agents/skills`，链到那里即可。
+
+### 它描述的代码不在这个仓库里
+
+文档中的路径（`Studio/components/flower/flowerScene.ts`、`data/flowers.json`、
+`scripts/upsert_flower.py`、`tools/single-html/`）相对的是 **Flower-HUA 项目根目录**，
+不是本仓库。Skill 是那份代码库的阅读与创作指南；把项目 checkout 到旁边配合使用，
+或者单独把这些文件当作引擎的设计记录来读。
+
+---
+
 ## 🌸 在线 Demo（直接点开，无需安装）
 
 | | 说明 | 体积 |
@@ -203,44 +252,6 @@
 | `torch-ginger` | 绯红火炬姜 | 32 | `torch-cone` |
 | `wisteria-raceme` | 紫藤瀑布 | 24 | `wisteria-rachis` |
 | `（legacy 无 anatomy）` | Cobalt Ice Bloom | 104 | `—` |
----
-
-## 🧠 flower-engine Skill
-
-这个仓库的主体是一个 **Agent Skill**——把引擎的知识从 4887 行 `flowerScene.ts`
-加 761 行 `flowerAnatomy.ts` 里提出来，写成可查的表。
-
-| 文件 | 内容 |
-|---|---|
-| [`SKILL.md`](SKILL.md) | 触发描述、代码地图、6 步创作循环、硬性上限 |
-| [`references/params.md`](references/params.md) | **全部 43 个引擎参数**——默认值、区间、视觉效果，以及 rebuild / bake / uniform 三级**代价分类**（决定哪些能实时拖动，哪些会重建整个网格） |
-| [`references/anatomy.md`](references/anatomy.md) | **26 个结构科属 × 25 种花心**——轮瓣数、variation 曲线、花心默认值、`core.count` 的双重钳位表 |
-| [`references/translate.md`](references/translate.md) | 参考图 → `FlowerConfig` 的完整流程，含从 36 朵成品**实测**出的创作约定，以及一个逐项拆解的范例 |
-| [`references/build.md`](references/build.md) | 三个数据存储、Studio 生命周期、导出管线、单文件打包器、三个 Playwright 验证器 |
-| [`references/pitfalls.md`](references/pitfalls.md) | 约 20 个已经以约束形式写死在引擎源码里的失败模式 |
-
-**每个数字都对着源码核验过，不是凭记忆写的**：43 个参数默认值、26 行科属表
-（轮瓣数 / 花心种类 / 花心尺寸高度数量 / 每行 7 个 variation 值）、以及每一个
-`count` 上限——全部由脚本逐项比对 `flowerScene.ts` 与 `flowerAnatomy.ts`。
-
-### 安装
-
-Claude Code：
-
-```bash
-git clone https://github.com/VR-Jobs/Flower-skill.git
-ln -s "$(pwd)/Flower-skill" ~/.claude/skills/flower-engine
-```
-
-Codex 等其它 Agent Skills 宿主读的是 `~/.agents/skills`，链到那里即可。
-
-### 它描述的代码不在这个仓库里
-
-文档中的路径（`Studio/components/flower/flowerScene.ts`、`data/flowers.json`、
-`scripts/upsert_flower.py`、`tools/single-html/`）相对的是 **Flower-HUA 项目根目录**，
-不是本仓库。Skill 是那份代码库的阅读与创作指南；把项目 checkout 到旁边配合使用，
-或者单独把这些文件当作引擎的设计记录来读。
-
 ---
 
 ## 🔧 引擎是怎么工作的
