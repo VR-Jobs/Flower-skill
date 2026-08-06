@@ -322,6 +322,8 @@ materialize 成 Blob URL，所以双击启动不会卡。
 
 [MIT](LICENSE) © VR-Jobs
 
+上游项目同为 MIT，本仓库沿用。
+
 ---
 
 ## 🌱 源起与致谢 · Origin & Credits

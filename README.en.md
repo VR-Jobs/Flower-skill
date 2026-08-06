@@ -346,6 +346,8 @@ Not "should work" — actually run. Headless Chrome with software WebGL
 
 [MIT](LICENSE) © VR-Jobs
 
+The upstream project is MIT as well; this repository keeps the same terms.
+
 ---
 
 ## 🌱 Origin & Credits
