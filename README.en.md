@@ -10,6 +10,27 @@
 > animatable, exportable 3D flower — plus the Agent Skill that distils its
 > parameter surface into tables.
 
+## 🎬 Animated preview
+
+All six demos, recorded frame by frame in a headless browser (software rendering — not a screen capture).
+
+<table>
+<tr>
+<td width="50%" align="center"><img src="docs/images/gif-display-case.gif" alt="Display Case"><br><b>🗂 Display Case</b><br><sub>Space: 40 flowers bloom in a wave, then close together</sub></td>
+<td width="50%" align="center"><img src="docs/images/gif-gallery.gif" alt="Gallery"><br><b>🖼 Gallery</b><br><sub>One flower opening from bud to full bloom</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/images/gif-flower-editor.gif" alt="Flower Editor"><br><b>🎨 Flower Editor</b><br><sub>Growth replay: the garden re-sprouts in planting order</sub></td>
+<td align="center"><img src="docs/images/gif-flower-studio.gif" alt="Flower Studio"><br><b>🛠 Flower Studio</b><br><sub>Replay Bloom on the parameter workbench</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/images/gif-garden-walk.gif" alt="Garden Walk"><br><b>🚶 Garden Walk</b><br><sub>Third-person stroll through the garden</sub></td>
+<td align="center"><img src="docs/images/gif-flower-world.gif" alt="Flower World"><br><b>🌈 Flower World</b><br><sub>Walking into a sea of a thousand blooms</sub></td>
+</tr>
+</table>
+
+---
+
 ## 📦 What's in here
 
 An **Agent Skill** repository, shipped with a set of click-to-open demos:
@@ -341,28 +362,6 @@ Not "should work" — actually run. Headless Chrome with software WebGL
   repository says so rather than claiming a measurement it did not make.
 
 ---
-
-
----
-
-## 🎬 Animated preview
-
-All six demos, recorded frame by frame in a headless browser (software rendering — not a screen capture).
-
-<table>
-<tr>
-<td width="50%" align="center"><img src="docs/images/gif-display-case.gif" alt="Display Case"><br><b>🗂 Display Case</b><br><sub>Space: 40 flowers bloom in a wave, then close together</sub></td>
-<td width="50%" align="center"><img src="docs/images/gif-gallery.gif" alt="Gallery"><br><b>🖼 Gallery</b><br><sub>One flower opening from bud to full bloom</sub></td>
-</tr>
-<tr>
-<td align="center"><img src="docs/images/gif-flower-editor.gif" alt="Flower Editor"><br><b>🎨 Flower Editor</b><br><sub>Growth replay: the garden re-sprouts in planting order</sub></td>
-<td align="center"><img src="docs/images/gif-flower-studio.gif" alt="Flower Studio"><br><b>🛠 Flower Studio</b><br><sub>Replay Bloom on the parameter workbench</sub></td>
-</tr>
-<tr>
-<td align="center"><img src="docs/images/gif-garden-walk.gif" alt="Garden Walk"><br><b>🚶 Garden Walk</b><br><sub>Third-person stroll through the garden</sub></td>
-<td align="center"><img src="docs/images/gif-flower-world.gif" alt="Flower World"><br><b>🌈 Flower World</b><br><sub>Walking into a sea of a thousand blooms</sub></td>
-</tr>
-</table>
 
 ## 📄 Licence
 

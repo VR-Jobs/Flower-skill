@@ -9,6 +9,27 @@
 > 一个把参考图翻译成**可编辑、可绽放、可导出**的程序化 3D 花朵的引擎，
 > 以及把它的全部知识蒸馏成表格的 Agent Skill。
 
+## 🎬 动态预览 · Animated preview
+
+六个 demo 的实录动画，全部由无头浏览器逐帧录制（软件渲染，非屏幕录像）。
+
+<table>
+<tr>
+<td width="50%" align="center"><img src="docs/images/gif-display-case.gif" alt="花朵陈列柜"><br><b>🗂 花朵陈列柜</b><br><sub>空格键，40 种花错峰绽放再一起合拢</sub></td>
+<td width="50%" align="center"><img src="docs/images/gif-gallery.gif" alt="花朵画廊"><br><b>🖼 花朵画廊</b><br><sub>单朵花从花苞展开的完整过程</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/images/gif-flower-editor.gif" alt="鲜花编辑器"><br><b>🎨 鲜花编辑器</b><br><sub>生长回放：整座花园按种植顺序破土绽放</sub></td>
+<td align="center"><img src="docs/images/gif-flower-studio.gif" alt="Flower Studio"><br><b>🛠 Flower Studio</b><br><sub>Replay Bloom：参数工作台里的单朵重绽</sub></td>
+</tr>
+<tr>
+<td align="center"><img src="docs/images/gif-garden-walk.gif" alt="花园漫游"><br><b>🚶 花园漫游</b><br><sub>第三人称小人在花园里行走</sub></td>
+<td align="center"><img src="docs/images/gif-flower-world.gif" alt="鲜花世界"><br><b>🌈 鲜花世界</b><br><sub>穿行于上千朵花铺满的花海</sub></td>
+</tr>
+</table>
+
+---
+
 ## 📦 这个仓库有什么
 
 这是一个 **Agent Skill 仓库**，附带一整套可点开的在线 Demo：
@@ -317,28 +338,6 @@ materialize 成 Blob URL，所以双击启动不会卡。
   只能改用逐帧目视确认，本仓库对这类花就是这么验的。
 
 ---
-
-
----
-
-## 🎬 动态预览 · Animated preview
-
-六个 demo 的实录动画，全部由无头浏览器逐帧录制（软件渲染，非屏幕录像）。
-
-<table>
-<tr>
-<td width="50%" align="center"><img src="docs/images/gif-display-case.gif" alt="花朵陈列柜"><br><b>🗂 花朵陈列柜</b><br><sub>空格键，40 种花错峰绽放再一起合拢</sub></td>
-<td width="50%" align="center"><img src="docs/images/gif-gallery.gif" alt="花朵画廊"><br><b>🖼 花朵画廊</b><br><sub>单朵花从花苞展开的完整过程</sub></td>
-</tr>
-<tr>
-<td align="center"><img src="docs/images/gif-flower-editor.gif" alt="鲜花编辑器"><br><b>🎨 鲜花编辑器</b><br><sub>生长回放：整座花园按种植顺序破土绽放</sub></td>
-<td align="center"><img src="docs/images/gif-flower-studio.gif" alt="Flower Studio"><br><b>🛠 Flower Studio</b><br><sub>Replay Bloom：参数工作台里的单朵重绽</sub></td>
-</tr>
-<tr>
-<td align="center"><img src="docs/images/gif-garden-walk.gif" alt="花园漫游"><br><b>🚶 花园漫游</b><br><sub>第三人称小人在花园里行走</sub></td>
-<td align="center"><img src="docs/images/gif-flower-world.gif" alt="鲜花世界"><br><b>🌈 鲜花世界</b><br><sub>穿行于上千朵花铺满的花海</sub></td>
-</tr>
-</table>
 
 ## 📄 许可
 
